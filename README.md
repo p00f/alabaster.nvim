@@ -48,3 +48,4 @@ Fennel
 - [zathura](https://gist.github.com/p00f/aad0abbd3a9cef67562a8ea1aadd2a2e)
 - [wofi](https://gist.github.com/p00f/46f41a8c2d85e5edf13fcd38ed130faa)
 - [fzf/skim](https://gist.github.com/p00f/9d159123c78cbcf8e716c362cfd4eb2b) (uses fish shell)
+
