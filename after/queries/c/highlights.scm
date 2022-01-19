@@ -1,5 +1,3 @@
-; vim: ft=query
-
 (function_declarator
   declarator: (identifier) @alabaster.definition)
 (preproc_function_def
