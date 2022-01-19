@@ -20,3 +20,9 @@
 
 (preproc_def
   name: (identifier) @alabaster.definition)
+
+(class_specifier
+  name: (type_identifier) @alabaster.definition)
+
+(struct_specifier
+  name: (type_identifier) @alabaster.definition)

@@ -1,38 +1,22 @@
 ; vim: ft=query
 
-(local_function (identifier) @alabaster.definition)
+(function_declaration
+  name: (identifier) @alabaster.definition)
 
-(function
-  (function_name (identifier) @alabaster.definition))
-(function
-  (function_name
-    (function_name_field
-      ;; TODO capture only the last `property_identifier`
-      (property_identifier) @alabaster.definition)))
+(assignment_statement
+  (variable_list
+    name: (dot_index_expression) @alabaster.definition)
+  (expression_list
+    value: (function_definition)))
 
-(variable_declaration
- (variable_declarator
-   (identifier) @alabaster.definition)
- (function_definition))
+(assignment_statement
+  (variable_list
+    name: (identifier) @alabaster.definition)
+  (expression_list
+    value: (function_definition)))
 
-(local_variable_declaration
- (variable_declarator
-   (identifier) @alabaster.definition)
- (function_definition))
+(function_declaration
+  name: (dot_index_expression) @alabaster.definition)
 
-(variable_declaration
-  (variable_declarator
-    (field_expression
-      (property_identifier) @alabaster.definition))
-  (function_definition))
-
-(variable_declaration
-  (variable_declarator
-    (field_expression
-      (global_variable)
-      (property_identifier) @alabaster.definition)))
-
-(table
-  (field
-    (identifier) @alabaster.string
-    (_)))
+(table_constructor
+  (field name: (identifier) @alabaster.string))

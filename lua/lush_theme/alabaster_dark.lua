@@ -61,7 +61,7 @@ local theme = lush(function()
     IncSearch({ bg = ansi.yellow, fg = bg }),
     -- Substitute   { }, -- |:substitute| replacement text highlighting
     LineNr({ fg = fg.darken(50) }),
-    CursorLineNr({ fg = fg.darken(40), gui = "bold" }),
+    CursorLineNr({ fg = ansi.blue, gui = "bold" }),
     MatchParen({ gui = "underline", sp = active }),
     -- ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
     -- MsgArea      { }, -- Area for messages and cmdline
