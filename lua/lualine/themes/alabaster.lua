@@ -3,7 +3,7 @@ local colors = {
     color2 = "#cd974b",
     color3 = "#cecece",
     color4 = "#9F9F9F",
-    color5 = "#95cb82",
+    color5 = "#333333",
     color6 = "#cc8bc9",
 }
 
@@ -18,7 +18,7 @@ return {
         c = { fg = colors.color4, bg = colors.color1 },
     },
     normal = {
-        a = { fg = colors.color1, bg = colors.color5, gui = "bold" },
+        a = { fg = colors.color3, bg = colors.color5, gui = "bold" },
         b = { fg = colors.color3, bg = colors.color1 },
         c = { fg = colors.color3, bg = colors.color1 },
     },
