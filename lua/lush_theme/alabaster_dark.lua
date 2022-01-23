@@ -259,6 +259,8 @@ local theme = lush(function()
     LightspeedGreyWash({ fg = fg.darken(70) }),
     --- checkhealth
     healthSuccess({ fg = ansi.green, bg = bg }),
+    --- cmp
+    CmpItemMenuDefault({ fg = ansi.magenta }),
   }
 end)
 

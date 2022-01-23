@@ -1,5 +1,7 @@
 (struct_item
   name: (type_identifier) @alabaster.definition)
+(enum_item
+  name: (type_identifier) @alabaster.definition)
 
 (impl_item
   type: (type_identifier) @alabaster.definition
