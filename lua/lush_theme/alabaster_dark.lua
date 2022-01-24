@@ -7,7 +7,7 @@ local def_fg = hsl("#71ade7")
 local const_fg = hsl("#cc8bc9")
 local active = hsl("#cd974b")
 local string_fg = hsl("#95cb82")
-local bracket_fg = fg.darken(40)
+local darker_fg = fg.darken(40)
 local diffadd = hsl(100, 50, 50)
 local diffdelete = hsl(2, 65, 50)
 local diffchange = hsl(30, 85, 50)
@@ -181,7 +181,7 @@ local theme = lush(function()
     TSParameterReference({ fg = fg }),
     TSProperty({ fg = fg }),
     TSPunctDelimiter({ fg = punct_fg }),
-    TSPunctBracket({ fg = bracket_fg }),
+    TSPunctBracket({ fg = fg.darken(10) }),
     TSPunctSpecial({ fg = punct_fg }),
     TSRepeat({ fg = fg }),
     TSString({ fg = string_fg }),
@@ -215,18 +215,18 @@ local theme = lush(function()
     TelescopeTitle({ fg = ansi.blue, bg = bg.lighten(7) }),
     TelescopeResultsTitle({ fg = ansi.white, bg = bg.lighten(7) }),
     --- Neogit
-    NeogitPopupActionDisabled({ fg = bracket_fg }),
+    NeogitPopupActionDisabled({ fg = darker_fg }),
     NeogitPopupActionKey({ fg = ansi.magenta }),
-    NeogitPopupOptionDisabled({ fg = bracket_fg }),
+    NeogitPopupOptionDisabled({ fg = darker_fg }),
     NeogitPopupOptionKey({ fg = ansi.blue }),
-    NeogitPopupSwitchDisabled({ fg = bracket_fg }),
+    NeogitPopupSwitchDisabled({ fg = darker_fg }),
     NeogitPopupSwitchEnabled({ fg = ansi.cyan }),
     NeogitPopupSwitchKey({ fg = ansi.magenta }),
     --- Fugitive
     diffAdded({ fg = diffadd }),
     diffRemoved({ fg = diffdelete }),
     --- Startify
-    StartifyBracket({ fg = bracket_fg }),
+    StartifyBracket({ fg = darker_fg }),
     StartifyFile({ fg = fg }),
     StartifySection({ fg = ansi.green }),
     StartifySlash({ fg = ansi.blue }),
