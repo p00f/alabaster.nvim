@@ -261,6 +261,14 @@ local theme = lush(function()
     healthSuccess({ fg = ansi.green, bg = bg }),
     --- cmp
     CmpItemMenuDefault({ fg = ansi.magenta }),
+    --- nvim-ts-rainbow
+    rainbowcol1({ fg = ansi.yellow }),
+    rainbowcol2({ fg = ansi.magenta }),
+    rainbowcol3({ fg = ansi.blue }),
+    rainbowcol4({ fg = ansi.yellow }),
+    rainbowcol5({ fg = ansi.magenta }),
+    rainbowcol6({ fg = ansi.blue }),
+    rainbowcol7({ fg = ansi.red }),
   }
 end)
 

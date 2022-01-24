@@ -25,6 +25,7 @@ This colorscheme is designed with nvim-treesitter in mind (there is _some_ highl
 - [andymass/vim-matchup](https://github.com/andymass/vim-matchup)
 - [phaazon/hop.nvim](https://github.com/phaazon/hop.nvim)
 - [ggandor/lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim)
+- [p00f/nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
 
 ## Screenshots
 
