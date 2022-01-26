@@ -131,6 +131,7 @@ local theme = lush(function()
     SpecialComment({ bg = bg.lighten(7), fg = ansi.blue }),
     debugPc({ bg = ansi.blue }),
     debugBreakpoint({ bg = ansi.red }),
+    helpHyperTextJump({ fg = ansi.magenta }),
 
     Underlined({ gui = "underline" }), -- (preferred) text that stands out, HTML links
     Italic({ gui = "italic" }),
