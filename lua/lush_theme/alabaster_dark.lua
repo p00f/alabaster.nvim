@@ -132,6 +132,10 @@ local theme = lush(function()
     debugPc({ bg = ansi.blue }),
     debugBreakpoint({ bg = ansi.red }),
     helpHyperTextJump({ fg = ansi.magenta }),
+    helpSectionDelim({ fg = ansi.magenta }),
+    helpExample({ fg = ansi.cyan }),
+    helpCommand({ fg = ansi.cyan }),
+    helpHeadline({ fg = ansi.blue }),
 
     Underlined({ gui = "underline" }), -- (preferred) text that stands out, HTML links
     Italic({ gui = "italic" }),
