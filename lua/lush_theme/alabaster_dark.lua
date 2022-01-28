@@ -129,8 +129,8 @@ local theme = lush(function()
     -- Tag            { }, --    you can use CTRL-] on this
     -- Delimiter      { },
     SpecialComment({ bg = bg.lighten(7), fg = ansi.blue }),
-    debugPc({ bg = ansi.blue }),
-    debugBreakpoint({ bg = ansi.red }),
+    debugPc({ bg = ansi.blue.darken(80) }),
+    debugBreakpoint({ bg = ansi.red.darken(10).saturate(10) }),
     helpHyperTextJump({ fg = ansi.magenta }),
     helpSectionDelim({ fg = ansi.magenta }),
     helpExample({ fg = ansi.cyan }),
