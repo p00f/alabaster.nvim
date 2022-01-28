@@ -274,6 +274,9 @@ local theme = lush(function()
     rainbowcol5({ fg = ansi.magenta }),
     rainbowcol6({ fg = ansi.blue }),
     rainbowcol7({ fg = ansi.red }),
+    --- Iswap
+    ISwapSnipe({ bg = ansi.yellow, fg = bg }),
+    ISwapGrey({ fg = fg.darken(70) }),
   }
 end)
 
