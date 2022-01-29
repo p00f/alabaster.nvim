@@ -136,6 +136,7 @@ local theme = lush(function()
     helpExample({ fg = ansi.cyan }),
     helpCommand({ fg = ansi.cyan }),
     helpHeadline({ fg = ansi.blue }),
+    helpHeader({ fg = ansi.magenta }),
 
     Underlined({ gui = "underline" }), -- (preferred) text that stands out, HTML links
     Italic({ gui = "italic" }),
