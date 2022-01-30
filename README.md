@@ -31,17 +31,27 @@ This colorscheme is designed with nvim-treesitter in mind (there is _some_ highl
 ## Screenshots
 
 Rust
-![image](https://user-images.githubusercontent.com/36493671/149557093-4d06667f-2f28-4095-8b74-944b84f7fd0d.png)
+![swappy-20220130-111716](https://user-images.githubusercontent.com/36493671/151688511-c5d31f0d-80e7-4bee-a148-0171a608e5f2.png)
+
 Telescope
-![image](https://user-images.githubusercontent.com/36493671/149559619-07903fa7-196d-41c4-9af0-c8de0386080b.png)
-Neogit (also shows `DiffDelete` highlight group)
-![image](https://user-images.githubusercontent.com/36493671/149558725-689c3865-dcd7-4f42-b0a1-936d5b935a1b.png)
-diffview.nvim (also shows `DiffChange`, `DiffText`, `DiffAdd` highlight groups)
-![image](https://user-images.githubusercontent.com/36493671/149557553-3a46271b-8d54-48f9-b939-dbd23c49e628.png)
+![swappy-20220130-111801](https://user-images.githubusercontent.com/36493671/151688522-c2d3a5d9-f97f-4eba-9b28-f562eebd2491.png)
+
+Neogit (also shows `DiffAdd` and `DiffDelete` highlight groups)
+![swappy-20220130-112712](https://user-images.githubusercontent.com/36493671/151688542-657660cc-5478-4341-9ee1-553977e45408.png)
+
+diffview.nvim (also shows `DiffChange` and `DiffText` highlight groups)
+![swappy-20220130-112534](https://user-images.githubusercontent.com/36493671/151688555-cdfd45c6-4e9e-48fe-bb0c-3c5191de9906.png)
+
 C++
-![image](https://user-images.githubusercontent.com/36493671/149557907-7c262c1d-e5b1-4b0a-a81e-154d9c1fea63.png)
+![swappy-20220130-111917](https://user-images.githubusercontent.com/36493671/151689029-32c664ac-5514-46cf-9326-70b208849e5c.png)
+
 Fennel
-![image](https://user-images.githubusercontent.com/36493671/149558090-2efd3fa3-8d91-422f-acd5-5358d7ae1d6d.png)
+![swappy-20220130-112020](https://user-images.githubusercontent.com/36493671/151689036-56eb672d-f3ec-4784-aa62-582be472310d.png)
+
+Help
+![swappy-20220130-112338](https://user-images.githubusercontent.com/36493671/151689040-8eeeabdd-2aaa-418c-a3ab-8a7e09596abc.png)
+
+
 
 ## Alabaster dark for other tools
 - [wezterm](https://gist.github.com/p00f/ed538cf8a811184b23e065c0a5d3fc36)
