@@ -14,6 +14,7 @@ local diffchange = hsl(30, 85, 50)
 local floatwin = bg.lighten(5)
 local statusline = bg.lighten(4)
 local comment = hsl("#dfdf8e")
+local dim_comment = fg.darken(50)
 local mistake = {
   fg = hsl("#c33c33"),
   bg = hsl("#2b1d1e"),
@@ -33,11 +34,12 @@ local ansi = {
   white = hsl("#cecece"),
   yellow = hsl("#cd974b"),
 }
+local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
 
 ---@diagnostic disable: undefined-global
 local theme = lush(function()
   return {
-    Comment({ fg = comment }),
+    Comment({ fg = comment_fg }),
     ColorColumn({ bg = bg.lighten(5) }),
     Conceal({ fg = fg.darken(15) }),
     Cursor({ bg = active, fg = hsl("#000000") }),
@@ -203,7 +205,6 @@ local theme = lush(function()
     TSText({ fg = fg }),
 
     --- Theme specific
-    AlabasterComment({ fg = comment }),
     AlabasterConstant({ fg = const_fg }),
     AlabasterDefinition({ fg = def_fg }),
     AlabasterPunct({ fg = punct_fg }),

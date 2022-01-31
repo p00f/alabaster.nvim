@@ -11,6 +11,8 @@ Install [lush.nvim](https://github.com/rktjmp/lush.nvim) and this colorscheme us
 set termguiclors
 colorscheme alabaster_dark
 ```
+## Configuration
+One config option is provided: `g:alabaster_dim_comments` (default: `false`). When true, comments are dimmed instead of being highlighteed bright yellow.
 
 ## Treesitter
 This colorscheme is designed with nvim-treesitter in mind (there is _some_ highlighting of the default highlight groups but the intended use is with treesitter). Please contribute queries if you can, following [these rules](https://github.com/tonsky/sublime-scheme-alabaster#motivation)
