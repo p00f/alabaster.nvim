@@ -40,7 +40,7 @@ local float_bg = vim.g.alabaster_floatborder and bg or pmenu_bg
 local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = fg.darken(75) }
   or {
     bg = float_bg,
-    fg = fg,
+    fg = float_bg,
   }
 
 ---@diagnostic disable: undefined-global
