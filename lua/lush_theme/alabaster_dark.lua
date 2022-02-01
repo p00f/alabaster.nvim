@@ -34,7 +34,6 @@ local ansi = {
   yellow = hsl("#cd974b"),
 }
 local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
-local cmp_match = ansi.blue.saturate(50).darken(10)
 local pmenu_bg = bg.lighten(5).rotate(15)
 local float_bg = vim.g.alabaster_floatborder and bg or pmenu_bg
 local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = fg.darken(75) }
@@ -226,8 +225,8 @@ local theme = lush(function()
     TelescopeMultiSelection({ fg = ansi.magenta }),
     TelescopePromptPrefix({ fg = ansi.blue }),
     TelescopeSelectionCaret({ fg = mistake.fg }),
-    TelescopeTitle({ fg = ansi.blue, bg = bg.lighten(7) }),
-    TelescopeResultsTitle({ fg = ansi.white, bg = bg.lighten(7) }),
+    TelescopeTitle({ fg = ansi.brightyellow }),
+    TelescopeResultsTitle({ fg = ansi.yellow }),
     --- Neogit
     NeogitPopupActionDisabled({ fg = darker_fg }),
     NeogitPopupActionKey({ fg = ansi.magenta }),
