@@ -1,9 +1,7 @@
 vim.opt.background = "dark"
 vim.g.colors_name = "alabaster_dark"
 
--- reload theme file every time `:colorscheme alabaster_dark` is called
 package.loaded["lush_theme.alabaster_dark"] = nil
-
 require("lush")(require("lush_theme.alabaster_dark"))
 
 -- hlmap

@@ -11,7 +11,6 @@ local darker_fg = fg.darken(40)
 local diffadd = hsl(100, 50, 50)
 local diffdelete = hsl(2, 65, 50)
 local diffchange = hsl(30, 85, 50)
-local floatwin = bg.lighten(5)
 local statusline = bg.lighten(4)
 local comment = hsl("#dfdf8e")
 local dim_comment = fg.darken(50)
@@ -35,6 +34,14 @@ local ansi = {
   yellow = hsl("#cd974b"),
 }
 local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
+local cmp_match = ansi.blue.saturate(50).darken(10)
+local pmenu_bg = bg.lighten(5).rotate(15)
+local float_bg = vim.g.alabaster_floatborder and bg or pmenu_bg
+local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = fg.darken(75) }
+  or {
+    bg = float_bg,
+    fg = fg,
+  }
 
 ---@diagnostic disable: undefined-global
 local theme = lush(function()
@@ -62,7 +69,7 @@ local theme = lush(function()
     SignColumn({}),
     IncSearch({ bg = ansi.yellow, fg = bg }),
     -- Substitute   { }, -- |:substitute| replacement text highlighting
-    LineNr({ fg = fg.darken(50) }),
+    LineNr({ fg = fg.darken(55) }),
     CursorLineNr({ fg = ansi.blue, gui = "bold" }),
     MatchParen({ gui = "underline", sp = active }),
     -- ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
@@ -71,10 +78,10 @@ local theme = lush(function()
     MoreMsg({ fg = ansi.green, gui = "bold" }),
     NonText({ fg = fg.darken(50) }),
     Normal({ bg = bg, fg = fg }),
-    -- NormalFloat  { }, -- Normal text in floating windows.
+    NormalFloat({ bg = float_bg }),
     -- NormalNC     { }, -- normal text in non-current windows
-    FloatBorder({ bg = floatwin }),
-    Pmenu({ bg = floatwin }),
+    FloatBorder(floatborder),
+    Pmenu({ bg = pmenu_bg }),
     PmenuSel({ bg = bg.lighten(20) }),
     PmenuSbar({ bg = bg.lighten(10) }),
     PmenuThumb({ bg = bg.lighten(30) }),
