@@ -12,6 +12,9 @@
   body: (declaration_list
           (type_item
             name: (type_identifier) @alabaster.definition)))
+(impl_item
+  type: (generic_type
+          type: (type_identifier) @alabaster.definition))
 
 (trait_item
   name: (type_identifier) @alabaster.definition
