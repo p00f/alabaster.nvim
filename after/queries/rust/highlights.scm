@@ -17,10 +17,15 @@
           type: (type_identifier) @alabaster.definition))
 
 (trait_item
-  name: (type_identifier) @alabaster.definition
+  name: (type_identifier) @alabaster.definition)
+
+(trait_item
   body: (declaration_list
           (associated_type
-            name: (type_identifier) @alabaster.definition)
+            name: (type_identifier) @alabaster.definition)))
+
+(trait_item
+  body: (declaration_list
           (function_signature_item
             name: (identifier) @alabaster.definition)))
 
