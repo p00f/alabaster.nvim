@@ -24,6 +24,11 @@
   declarator: (function_declarator
                 declarator: (field_identifier) @alabaster.definition))
 
+(field_declaration
+  declarator: (pointer_declarator
+                declarator: (function_declarator
+                              declarator: (field_identifier) @alabaster.definition)))
+
 (labeled_statement
   label: (statement_identifier) @alabaster.definition)
 

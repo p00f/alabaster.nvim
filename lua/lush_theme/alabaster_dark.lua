@@ -34,7 +34,7 @@ local ansi = {
   yellow = hsl("#cd974b"),
 }
 local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
-local pmenu_bg = bg.lighten(5).rotate(15)
+local pmenu_bg = bg.lighten(5)
 local float_bg = vim.g.alabaster_floatborder and bg or pmenu_bg
 local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = fg.darken(75) }
   or {
