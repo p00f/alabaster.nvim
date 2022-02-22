@@ -33,10 +33,6 @@
                               declarator:
                                 (field_identifier) @alabaster.definition)))
 
-(((field_expression
-    (field_identifier) @alabaster.definition)) @_parent
-     (#has-parent? @_parent template_method function_declarator call_expression))
-
 (function_declarator
  declarator: (field_identifier) @alabaster.definition)
 
