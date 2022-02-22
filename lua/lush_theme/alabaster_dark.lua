@@ -236,8 +236,8 @@ local theme = lush(function()
     NeogitPopupSwitchEnabled({ fg = ansi.cyan }),
     NeogitPopupSwitchKey({ fg = ansi.magenta }),
     --- Fugitive
-    diffAdded({ fg = diffadd }),
-    diffRemoved({ fg = diffdelete }),
+    diffAdded({ bg = diffadd.darken(80), fg = fg }),
+    diffRemoved({ bg = diffdelete.darken(80), fg = fg }),
     --- Startify
     StartifyBracket({ fg = darker_fg }),
     StartifyFile({ fg = fg }),
