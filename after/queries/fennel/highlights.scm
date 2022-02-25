@@ -1,3 +1,5 @@
+;; vim: ft=query
+
 (fn
   name: (symbol) @alabaster.definition)
   ; TODO: add this when https://github.com/nvim-treesitter/nvim-treesitter/issues/1788 is fixed

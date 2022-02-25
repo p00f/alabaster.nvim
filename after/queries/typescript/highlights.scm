@@ -1,3 +1,5 @@
+;; vim: ft=query
+
 (interface_declaration
   name: (type_identifier) @alabaster.definition)
 

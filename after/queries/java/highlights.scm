@@ -1,3 +1,5 @@
+;; vim: ft=query
+
 (class_declaration
   name: (identifier) @alabaster.definition)
 (constructor_declaration

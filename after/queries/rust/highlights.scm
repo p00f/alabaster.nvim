@@ -1,3 +1,5 @@
+;; vim: ft=query
+
 (struct_item
   name: (type_identifier) @alabaster.definition)
 (enum_item
