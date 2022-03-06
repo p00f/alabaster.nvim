@@ -285,6 +285,9 @@ local theme = lush(function()
     --- Iswap
     ISwapSnipe({ bg = ansi.yellow, fg = bg }),
     ISwapGrey({ fg = fg.darken(70) }),
+    --- vim-dadbod-ui
+    dbui_help({ fg = dim_comment }),
+    dbui_connection_source({ fg = dim_comment }),
   }
 end)
 

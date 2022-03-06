@@ -33,6 +33,7 @@ This colorscheme is designed with nvim-treesitter in mind (there is _some_ highl
 - [ggandor/lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim)
 - [p00f/nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
 - [mizlan/iswap.nvim](https://github.com/mizlan/iswap.nvim): use `ISwapSnipe` for `hl_snipe` and `ISwapGrey` for `hl_grey`
+- [kristijanhusak/vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
 
 ## Screenshots
 
