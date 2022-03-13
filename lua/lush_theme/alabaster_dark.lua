@@ -36,7 +36,7 @@ local ansi = {
 local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
 local pmenu_bg = hsl("#182325")
 local float_bg = vim.g.alabaster_floatborder and bg or pmenu_bg
-local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = fg.darken(75) }
+local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = hsl("#333333") }
   or {
     bg = float_bg,
     fg = float_bg,
@@ -47,24 +47,24 @@ local theme = lush(function()
   return {
     Comment({ fg = comment_fg }),
     ColorColumn({ bg = hsl("#182325") }),
-    Conceal({ fg = fg.darken(15) }),
+    Conceal({ fg = hsl("#b0b0b0") }),
     Cursor({ bg = active, fg = hsl("#000000") }),
     -- lCursor      { }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     -- CursorIM     { }, -- like Cursor, but used when in IME mode |CursorIM|
     CursorColumn({ fg = fg, bg = hsl("#182325") }),
     CursorLine({ bg = hsl("#182325") }),
     Directory({ fg = ansi.blue }),
-    DiffAdd({ bg = diffadd.darken(80), fg = fg }),
-    DiffChange({ bg = diffchange.darken(80), fg = fg }),
-    DiffDelete({ bg = diffdelete.darken(80), fg = fg }),
-    DiffText({ bg = diffchange.darken(60), fg = fg }),
+    DiffAdd({ bg = hsl("#15260d"), fg = fg }),
+    DiffChange({ bg = hsl("#2f1a04"), fg = fg }),
+    DiffDelete({ bg = hsl("#2a0a09"), fg = fg }),
+    DiffText({ bg = hsl("#5e3308"), fg = fg }),
     EndOfBuffer({ fg = hsl("#354c50") }),
     -- TermCursor   { }, -- cursor in a focused terminal
     -- TermCursorNC { }, -- cursor in an unfocused terminal
     ErrorMsg({ fg = error, bg = mistake.bg }),
     VertSplit({ bg = hsl("#212f31"), fg = hsl("#212f31") }),
     Folded({ bg = hsl("#182325"), fg = hsl("#7d7d7d") }),
-    FoldColumn({ bg = hsl("#182325"), fg = fg.darken(20) }),
+    FoldColumn({ bg = hsl("#182325"), fg = hsl("#a6a6a6") }),
     SignColumn({}),
     IncSearch({ bg = ansi.yellow, fg = bg }),
     -- Substitute   { }, -- |:substitute| replacement text highlighting
@@ -137,8 +137,8 @@ local theme = lush(function()
     -- Tag            { }, --    you can use CTRL-] on this
     -- Delimiter      { },
     SpecialComment({ bg = hsl("#1d292b"), fg = ansi.blue }),
-    debugPc({ bg = ansi.blue.darken(80) }),
-    debugBreakpoint({ bg = ansi.red.darken(10).saturate(10) }),
+    debugPc({ bg = hsl("#0f2534") }),
+    debugBreakpoint({ bg = hsl("#b33229") }),
     helpHyperTextJump({ fg = ansi.magenta }),
     helpSectionDelim({ fg = ansi.magenta }),
     helpExample({ fg = ansi.cyan }),
@@ -154,7 +154,7 @@ local theme = lush(function()
 
     Error({ bg = mistake.bg, fg = mistake.fg }),
 
-    Todo({ bg = comment.darken(20), fg = bg }),
+    Todo({ bg = hsl("#d0d058"), fg = bg }),
 
     --- Diagnostic
     LspReferenceText({ bg = hsl("#253437") }),
@@ -195,7 +195,7 @@ local theme = lush(function()
     TSParameterReference({ fg = fg }),
     TSProperty({ fg = fg }),
     TSPunctDelimiter({ fg = punct_fg }),
-    TSPunctBracket({ fg = fg.darken(10) }),
+    TSPunctBracket({ fg = hsl("#bababa") }),
     TSPunctSpecial({ fg = punct_fg }),
     TSRepeat({ fg = fg }),
     TSString({ fg = string_fg }),
@@ -236,8 +236,8 @@ local theme = lush(function()
     NeogitPopupSwitchEnabled({ fg = ansi.cyan }),
     NeogitPopupSwitchKey({ fg = ansi.magenta }),
     --- Fugitive
-    diffAdded({ bg = diffadd.darken(80), fg = fg }),
-    diffRemoved({ bg = diffdelete.darken(80), fg = fg }),
+    diffAdded({ bg = hsl("#15260d"), fg = fg }),
+    diffRemoved({ bg = hsl("#2a0a09"), fg = fg }),
     --- Startify
     StartifyBracket({ fg = darker_fg }),
     StartifyFile({ fg = fg }),
@@ -266,7 +266,7 @@ local theme = lush(function()
     --- Hop
     HopNextKey({ fg = ansi.brightyellow }),
     HopNextKey1({ fg = ansi.cyan }),
-    HopNextKey2({ fg = ansi.cyan.darken(40) }),
+    HopNextKey2({ fg = hsl("#297567") }),
     HopUnmatched({ fg = hsl("#3d3d3d") }),
     --- Lightspeed
     LightspeedGreyWash({ fg = hsl("#3d3d3d") }),
@@ -288,6 +288,8 @@ local theme = lush(function()
     --- vim-dadbod-ui
     dbui_help({ fg = dim_comment }),
     dbui_connection_source({ fg = dim_comment }),
+    --- nvim-dap-virtual-text
+    NvimDapVirtualText({ bg = hsl("#1d292b"), fg = ansi.cyan }),
   }
 end)
 
