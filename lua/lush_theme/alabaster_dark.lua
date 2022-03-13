@@ -7,21 +7,21 @@ local def_fg = hsl("#71ade7")
 local const_fg = hsl("#cc8bc9")
 local active = hsl("#cd974b")
 local string_fg = hsl("#95cb82")
-local darker_fg = fg.darken(40)
-local diffadd = hsl(100, 50, 50)
-local diffdelete = hsl(2, 65, 50)
-local diffchange = hsl(30, 85, 50)
-local statusline = bg.lighten(4)
+local darker_fg = hsl("#7d7d7d")
+local diffadd = hsl("#6abf40")
+local diffdelete = hsl("#d2322d")
+local diffchange = hsl("#ec8013")
+local statusline = hsl("#162022")
 local comment = hsl("#dfdf8e")
-local dim_comment = fg.darken(50)
+local dim_comment = hsl("#696969")
 local mistake = {
   fg = hsl("#c33c33"),
   bg = hsl("#2b1d1e"),
 }
-local error = mistake.fg.rotate(5).saturate(30)
-local warn = diffchange.lighten(40)
-local hint = def_fg.lighten(20)
-local info = diffadd.lighten(20)
+local error = hsl("#d13e23")
+local warn = hsl("#f4b371")
+local hint = hsl("#8ebeec")
+local info = hsl("#88cc66")
 local ansi = {
   black = hsl("#333333"),
   blue = hsl("#71aed7"),
@@ -34,7 +34,7 @@ local ansi = {
   yellow = hsl("#cd974b"),
 }
 local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
-local pmenu_bg = bg.lighten(5)
+local pmenu_bg = hsl("#182325")
 local float_bg = vim.g.alabaster_floatborder and bg or pmenu_bg
 local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = fg.darken(75) }
   or {
@@ -46,47 +46,47 @@ local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = fg.darken(75
 local theme = lush(function()
   return {
     Comment({ fg = comment_fg }),
-    ColorColumn({ bg = bg.lighten(5) }),
+    ColorColumn({ bg = hsl("#182325") }),
     Conceal({ fg = fg.darken(15) }),
     Cursor({ bg = active, fg = hsl("#000000") }),
     -- lCursor      { }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     -- CursorIM     { }, -- like Cursor, but used when in IME mode |CursorIM|
-    CursorColumn({ fg = fg, bg = bg.lighten(5) }),
-    CursorLine({ bg = bg.lighten(5) }),
+    CursorColumn({ fg = fg, bg = hsl("#182325") }),
+    CursorLine({ bg = hsl("#182325") }),
     Directory({ fg = ansi.blue }),
     DiffAdd({ bg = diffadd.darken(80), fg = fg }),
     DiffChange({ bg = diffchange.darken(80), fg = fg }),
     DiffDelete({ bg = diffdelete.darken(80), fg = fg }),
     DiffText({ bg = diffchange.darken(60), fg = fg }),
-    EndOfBuffer({ fg = bg.lighten(20) }),
+    EndOfBuffer({ fg = hsl("#354c50") }),
     -- TermCursor   { }, -- cursor in a focused terminal
     -- TermCursorNC { }, -- cursor in an unfocused terminal
     ErrorMsg({ fg = error, bg = mistake.bg }),
-    VertSplit({ bg = bg.lighten(10), fg = bg.lighten(10) }),
-    Folded({ bg = bg.lighten(5), fg = fg.darken(40) }),
-    FoldColumn({ bg = bg.lighten(5), fg = fg.darken(20) }),
+    VertSplit({ bg = hsl("#212f31"), fg = hsl("#212f31") }),
+    Folded({ bg = hsl("#182325"), fg = hsl("#7d7d7d") }),
+    FoldColumn({ bg = hsl("#182325"), fg = fg.darken(20) }),
     SignColumn({}),
     IncSearch({ bg = ansi.yellow, fg = bg }),
     -- Substitute   { }, -- |:substitute| replacement text highlighting
-    LineNr({ fg = fg.darken(55) }),
+    LineNr({ fg = hsl("#5c5c5c") }),
     CursorLineNr({ fg = ansi.blue, gui = "bold" }),
     MatchParen({ gui = "underline", sp = active }),
     -- ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
     -- MsgArea      { }, -- Area for messages and cmdline
     -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg({ fg = ansi.green, gui = "bold" }),
-    NonText({ fg = fg.darken(50) }),
+    NonText({ fg = hsl("#696969") }),
     Normal({ bg = bg, fg = fg }),
     NormalFloat({ bg = float_bg }),
     -- NormalNC     { }, -- normal text in non-current windows
     FloatBorder(floatborder),
     Pmenu({ bg = pmenu_bg }),
-    PmenuSel({ bg = bg.lighten(20) }),
-    PmenuSbar({ bg = bg.lighten(10) }),
-    PmenuThumb({ bg = bg.lighten(30) }),
+    PmenuSel({ bg = hsl("#354c50") }),
+    PmenuSbar({ bg = hsl("#212f31") }),
+    PmenuThumb({ bg = hsl("#47666b") }),
     Question({ fg = diffadd }),
-    QuickFixLine({ bg = bg.lighten(5) }),
-    Search({ bg = bg.lighten(20) }),
+    QuickFixLine({ bg = hsl("#182325") }),
+    Search({ bg = hsl("#354c50") }),
     SpecialKey({ fg = ansi.cyan }),
     SpellBad({ bg = mistake.bg, fg = mistake.fg }),
     SpellCap({ gui = "undercurl", sp = ansi.blue }),
@@ -94,14 +94,14 @@ local theme = lush(function()
     SpellRare({ gui = "undercurl", sp = ansi.magenta }),
     StatusLine({ bg = statusline, fg = fg }),
     StatusLineNC({ bg = statusline, fg = hsl("#9f9f9f") }),
-    TabLine({ bg = statusline, fg = fg.darken(40) }),
+    TabLine({ bg = statusline, fg = hsl("#7d7d7d") }),
     TabLineFill({ bg = statusline }),
     TabLineSel({ bg = statusline, fg = ansi.blue }),
     Title({ fg = const_fg }),
     Visual({ bg = hsl("#293334") }),
     VisualNOS({ bg = hsl("#293334") }),
     WarningMsg({ fg = comment.mix(diffchange, 60) }),
-    WildMenu({ bg = bg.lighten(20) }),
+    WildMenu({ bg = hsl("#354c50") }),
 
     --- SYNTAX I: TS groups link to these
     Constant({ fg = const_fg }),
@@ -136,7 +136,7 @@ local theme = lush(function()
     -- SpecialChar({ fg = diffchange }), --  special character in a constant
     -- Tag            { }, --    you can use CTRL-] on this
     -- Delimiter      { },
-    SpecialComment({ bg = bg.lighten(7), fg = ansi.blue }),
+    SpecialComment({ bg = hsl("#1d292b"), fg = ansi.blue }),
     debugPc({ bg = ansi.blue.darken(80) }),
     debugBreakpoint({ bg = ansi.red.darken(10).saturate(10) }),
     helpHyperTextJump({ fg = ansi.magenta }),
@@ -157,21 +157,21 @@ local theme = lush(function()
     Todo({ bg = comment.darken(20), fg = bg }),
 
     --- Diagnostic
-    LspReferenceText({ bg = bg.lighten(12) }),
-    LspReferenceRead({ bg = bg.lighten(12) }),
-    LspReferenceWrite({ bg = bg.lighten(12), gui = "underline", sp = active }),
-    LspCodeLens({ fg = fg.darken(55) }),
-    LspCodeLensSeparator({ fg = fg.darken(55) }),
+    LspReferenceText({ bg = hsl("#253437") }),
+    LspReferenceRead({ bg = hsl("#253437") }),
+    LspReferenceWrite({ bg = hsl("#253437"), gui = "underline", sp = active }),
+    LspCodeLens({ fg = hsl("#5c5c5c") }),
+    LspCodeLensSeparator({ fg = hsl("#5c5c5c") }),
 
     --- Diagnostic
     DiagnosticError({ fg = error }),
     DiagnosticWarn({ fg = warn }),
     DiagnosticHint({ fg = hint }),
     DiagnosticInfo({ fg = info }),
-    DiagnosticVirtualTextError({ bg = bg.lighten(7), fg = error }),
-    DiagnosticVirtualTextWarn({ bg = bg.lighten(7), fg = warn }),
-    DiagnosticVirtualTextHint({ bg = bg.lighten(7), fg = hint }),
-    DiagnosticVirtualTextInfo({ bg = bg.lighten(7), fg = info }),
+    DiagnosticVirtualTextError({ bg = hsl("#1d292b"), fg = error }),
+    DiagnosticVirtualTextWarn({ bg = hsl("#1d292b"), fg = warn }),
+    DiagnosticVirtualTextHint({ bg = hsl("#1d292b"), fg = hint }),
+    DiagnosticVirtualTextInfo({ bg = hsl("#1d292b"), fg = info }),
 
     --- Treesitter
     TSAttribute({}),
@@ -199,8 +199,8 @@ local theme = lush(function()
     TSPunctSpecial({ fg = punct_fg }),
     TSRepeat({ fg = fg }),
     TSString({ fg = string_fg }),
-    TSStringRegex({ bg = bg.lighten(7), fg = const_fg }),
-    TSStringEscape({ bg = bg.lighten(7), fg = const_fg }),
+    TSStringRegex({ bg = hsl("#1d292b"), fg = const_fg }),
+    TSStringEscape({ bg = hsl("#1d292b"), fg = const_fg }),
     TSSymbol({}),
     TSType({ fg = fg }),
     TSTypeBuiltin({ fg = fg }),
@@ -220,8 +220,8 @@ local theme = lush(function()
     GitSignsChange({ fg = diffchange }),
     GitSignsDelete({ fg = diffdelete }),
     --- Telescope
-    TelescopeBorder({ fg = bg.lighten(15) }),
-    TelescopeMatching({ fg = diffchange.lighten(20) }),
+    TelescopeBorder({ fg = hsl("#2b3d40") }),
+    TelescopeMatching({ fg = hsl("#f09942") }),
     TelescopeMultiSelection({ fg = ansi.magenta }),
     TelescopePromptPrefix({ fg = ansi.blue }),
     TelescopeSelectionCaret({ fg = mistake.fg }),
@@ -267,9 +267,9 @@ local theme = lush(function()
     HopNextKey({ fg = ansi.brightyellow }),
     HopNextKey1({ fg = ansi.cyan }),
     HopNextKey2({ fg = ansi.cyan.darken(40) }),
-    HopUnmatched({ fg = fg.darken(70) }),
+    HopUnmatched({ fg = hsl("#3d3d3d") }),
     --- Lightspeed
-    LightspeedGreyWash({ fg = fg.darken(70) }),
+    LightspeedGreyWash({ fg = hsl("#3d3d3d") }),
     --- checkhealth
     healthSuccess({ fg = ansi.green, bg = bg }),
     --- cmp
@@ -284,7 +284,7 @@ local theme = lush(function()
     rainbowcol7({ fg = ansi.red }),
     --- Iswap
     ISwapSnipe({ bg = ansi.yellow, fg = bg }),
-    ISwapGrey({ fg = fg.darken(70) }),
+    ISwapGrey({ fg = hsl("#3d3d3d") }),
     --- vim-dadbod-ui
     dbui_help({ fg = dim_comment }),
     dbui_connection_source({ fg = dim_comment }),
