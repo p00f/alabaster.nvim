@@ -1,10 +1,7 @@
 alabaster_dark.nvim
 ===
 
-A neovim port of [alabaster for Sublime Text](https://github.com/tonsky/sublime-scheme-alabaster). Requires [lush.nvim](https://github.com/rktjmp/lush.nvim)
-
-## Installation
-Install [lush.nvim](https://github.com/rktjmp/lush.nvim) and this colorscheme using a package manager.
+A neovim port of [alabaster for Sublime Text](https://github.com/tonsky/sublime-scheme-alabaster).
 
 ## Usage
 ```vim
