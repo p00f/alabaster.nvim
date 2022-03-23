@@ -52,6 +52,11 @@ C++
 Fennel
 ![swappy-20220130-112020](https://user-images.githubusercontent.com/36493671/151689036-56eb672d-f3ec-4784-aa62-582be472310d.png)
 
+Clojure (same code and font as the one on the original ST theme's README for comparison)
+
+(blue and magenta are switched in the original screenshot, the current ST theme matches this one)
+![image](https://user-images.githubusercontent.com/36493671/159711835-cf18d1c4-6940-414a-830b-a7096268b014.png)
+
 Help
 ![swappy-20220130-112338](https://user-images.githubusercontent.com/36493671/151689040-8eeeabdd-2aaa-418c-a3ab-8a7e09596abc.png)
 
