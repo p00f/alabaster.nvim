@@ -70,7 +70,7 @@ local theme = {
     -- TermCursor   { }, -- cursor in a focused terminal
     -- TermCursorNC { }, -- cursor in an unfocused terminal
     ErrorMsg = { fg = error, bg = mistake.bg },
-    VertSplit = { bg = "#212f31", fg = "#212f31" },
+    VertSplit = { fg = "#5c5c5c" },
     Folded = { bg = "#182325", fg = "#7d7d7d" },
     FoldColumn = { bg = "#182325", fg = "#a6a6a6" },
     SignColumn = {},
@@ -250,7 +250,8 @@ local theme = {
     StartifyBracket = { fg = darker_fg },
     StartifyFile = { link = "Normal" },
     StartifySection = { fg = ansi.green },
-    StartifySlash = { fg = ansi.blue },
+    StartifySlash = { fg = "#4e6e75" },
+    StartifyPath = { fg = "#4e6e75" },
     --- Statusline
     StatuslineAdd = { fg = diffadd, bg = statusline },
     StatuslineErr = { fg = error, bg = statusline },
