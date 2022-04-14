@@ -68,7 +68,7 @@ local theme = {
     DiffText = { bg = "#5e3308", fg = fg },
     EndOfBuffer = { fg = "#354c50" },
     -- TermCursor   { }, -- cursor in a focused terminal
-    -- TermCursorNC { }, -- cursor in an unfocused terminal
+    TermCursorNC = { fg = bg, bg = fg },
     ErrorMsg = { fg = error, bg = mistake.bg },
     VertSplit = { fg = "#5c5c5c" },
     Folded = { bg = "#182325", fg = "#7d7d7d" },
