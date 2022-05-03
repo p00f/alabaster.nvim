@@ -12,6 +12,6 @@
     (symbol) @alabaster.definition))
 
 (list
-  (symbol) @function.builtin
-  (#match? @function.builtin "^macro$")
+  (symbol) @function.macro
+  (#match? @function.macro"^macro$")
   (symbol) @alabaster.definition)
