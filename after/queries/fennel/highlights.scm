@@ -13,5 +13,5 @@
 
 (list
   (symbol) @function.macro
-  (#match? @function.macro"^macro$")
+  (#match? @function.macro "^macro$")
   (symbol) @alabaster.definition)
