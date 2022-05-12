@@ -1,7 +1,7 @@
 alabaster_dark.nvim
 ===
 
-A neovim port of [alabaster for Sublime Text](https://github.com/tonsky/sublime-scheme-alabaster). This is designed with nvim-treesitter in mind (there is _some_ highlighting of the default highlight groups but the intended use is with treesitter). **nvim-tressitter is an unstable plugin which may introduce breaking changes -- which can break this plugin -- at any time. Queries for some languages are bundled**. Please contribute queries if you can, following [these rules](https://github.com/tonsky/sublime-scheme-alabaster#motivation)
+A neovim port of [alabaster for Sublime Text](https://github.com/tonsky/sublime-scheme-alabaster). This is designed with [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) in mind (there is _some_ highlighting of the default highlight groups but the intended use is with treesitter). **nvim-tressitter is an unstable plugin which may introduce breaking changes -- which can break this plugin -- at any time. Queries for some languages are bundled**. Please contribute queries if you can, following [these rules](https://github.com/tonsky/sublime-scheme-alabaster#motivation)
 
 ## Usage
 ```vim
