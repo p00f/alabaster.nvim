@@ -1,7 +1,7 @@
 alabaster_dark.nvim
 ===
 
-A neovim port of [alabaster for Sublime Text](https://github.com/tonsky/sublime-scheme-alabaster).
+A neovim port of [alabaster for Sublime Text](https://github.com/tonsky/sublime-scheme-alabaster). This is designed with nvim-treesitter in mind (there is _some_ highlighting of the default highlight groups but the intended use is with treesitter). **nvim-tressitter is an unstable plugin which may introduce breaking changes -- which can break this plugin -- at any time. Queries for some languages are bundled**. Please contribute queries if you can, following [these rules](https://github.com/tonsky/sublime-scheme-alabaster#motivation)
 
 ## Usage
 ```vim
@@ -14,9 +14,6 @@ Two config options are provided:
 - `g:alabaster_floatborder` (default: `false`).
     When true, floating window borders have a foreground colour and background colour is the same as `Normal`.
     When false, floating window borders have no foreground colour and background colour is the same as popup menus.
-
-## Treesitter
-This colorscheme is designed with nvim-treesitter in mind (there is _some_ highlighting of the default highlight groups but the intended use is with treesitter). Please contribute queries if you can, following [these rules](https://github.com/tonsky/sublime-scheme-alabaster#motivation)
 
 ## Themed plugins
 - [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
