@@ -133,6 +133,8 @@ local theme = {
     VisualNOS = { bg = "#293334" },
     WarningMsg = { fg = "#e1ad4c" },
     WildMenu = { bg = "#354c50" },
+    WinBar = { bg = statusline, fg = ansi.brightyellow },
+    WinBarNC = { bg = statusline, fg = "#7d7d7d" },
 
     --- SYNTAX I: TS groups link to these
     Constant = { fg = const_fg },
