@@ -329,6 +329,9 @@ local theme = {
     dbui_connection_source = { fg = dim_comment },
     --- nvim-dap-virtual-text
     NvimDapVirtualText = { bg = "#1d292b", fg = ansi.cyan },
+    -- Languages
+    --- asm
+    asmDirective = { fg = dim_comment },
 }
 
 for k, v in pairs(theme) do
