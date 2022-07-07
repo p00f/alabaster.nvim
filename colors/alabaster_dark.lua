@@ -269,8 +269,8 @@ local theme = {
     NeogitPopupSwitchEnabled = { fg = ansi.cyan },
     NeogitPopupSwitchKey = { fg = ansi.magenta },
     --- Fugitive
-    diffAdded = { bg = "#15260d", fg = fg },
-    diffRemoved = { bg = "#2a0a09", fg = fg },
+    diffAdded = { bg = bg, fg = diffadd },
+    diffRemoved = { bg = bg, fg = diffdelete },
     --- Startify
     StartifyBracket = { fg = darker_fg },
     StartifyFile = { fg = ansi.white },
