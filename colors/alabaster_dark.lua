@@ -95,7 +95,7 @@ local theme = {
     ErrorMsg = { fg = error, bg = mistake.bg },
     VertSplit = { fg = "#5c5c5c" },
     Folded = { bg = "#182325", fg = "#7d7d7d" },
-    FoldColumn = { bg = "#182325", fg = "#a6a6a6" },
+    FoldColumn = { bg = bg, fg = "#4d4d4d" },
     SignColumn = {},
     IncSearch = { bg = ansi.yellow, fg = bg },
     -- Substitute   { }, -- |:substitute| replacement text highlighting
