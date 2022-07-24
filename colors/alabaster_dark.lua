@@ -93,7 +93,7 @@ local theme = {
     -- TermCursor   { }, -- cursor in a focused terminal
     TermCursorNC = { fg = bg, bg = fg },
     ErrorMsg = { fg = error, bg = mistake.bg },
-    VertSplit = { fg = "#5c5c5c" },
+    VertSplit = { fg = "#2b3d40" },
     Folded = { bg = "#182325", fg = "#7d7d7d" },
     FoldColumn = { bg = bg, fg = "#4d4d4d" },
     SignColumn = {},
@@ -133,8 +133,8 @@ local theme = {
     VisualNOS = { bg = "#293334" },
     WarningMsg = { fg = "#e1ad4c" },
     WildMenu = { bg = "#354c50" },
-    WinBar = { bg = statusline, fg = ansi.white, bold = true },
-    WinBarNC = { bg = statusline, fg = "#7d7d7d" },
+    WinBar = { bg = bg, fg = ansi.white, bold = true },
+    WinBarNC = { bg = bg, fg = "#7d7d7d" },
 
     --- SYNTAX I: TS groups link to these
     Constant = { fg = const_fg },
