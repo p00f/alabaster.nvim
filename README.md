@@ -66,3 +66,5 @@ Help
 - [wofi](https://gist.github.com/p00f/46f41a8c2d85e5edf13fcd38ed130faa)
 - [fzf/skim](https://gist.github.com/p00f/9d159123c78cbcf8e716c362cfd4eb2b) (uses fish shell)
 
+## Thanks
+[projekt0n/github-nvim-theme](https://github.com/projekt0n/github-nvim-theme) for diff colours

@@ -85,10 +85,10 @@ local theme = {
     CursorColumn = { fg = fg, bg = "#182325" },
     CursorLine = { bg = "#182325" },
     Directory = { fg = ansi.blue },
-    DiffAdd = { bg = "#15260d", fg = fg },
-    DiffChange = { bg = "#2f1a04", fg = fg },
-    DiffDelete = { bg = "#2a0a09", fg = fg },
-    DiffText = { bg = "#5e3308", fg = fg },
+    DiffAdd = { bg = "#244032", fg = "#56d364" },
+    DiffDelete = { bg = "#462c32", fg = "#f85149" },
+    DiffText = { bg = "#341a00", fg = "#fff987" },
+    DiffChange = { bg = "#341a00", fg = "#e3b341" },
     EndOfBuffer = { fg = "#354c50" },
     -- TermCursor   { }, -- cursor in a focused terminal
     TermCursorNC = { fg = bg, bg = fg },
@@ -269,8 +269,8 @@ local theme = {
     NeogitPopupSwitchEnabled = { fg = ansi.cyan },
     NeogitPopupSwitchKey = { fg = ansi.magenta },
     --- Fugitive
-    diffAdded = { bg = bg, fg = diffadd },
-    diffRemoved = { bg = bg, fg = diffdelete },
+    diffAdded = { link = "DiffAdd" },
+    diffRemoved = { link = "DiffDelete" },
     --- Startify
     StartifyBracket = { fg = darker_fg },
     StartifyFile = { fg = ansi.white },
