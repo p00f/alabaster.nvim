@@ -201,10 +201,10 @@ local theme = {
     DiagnosticWarn = { fg = warn },
     DiagnosticHint = { fg = hint },
     DiagnosticInfo = { fg = info },
-    DiagnosticVirtualTextError = { bg = "#1d292b", fg = error },
-    DiagnosticVirtualTextWarn = { bg = "#1d292b", fg = warn },
-    DiagnosticVirtualTextHint = { bg = "#1d292b", fg = hint },
-    DiagnosticVirtualTextInfo = { bg = "#1d292b", fg = info },
+    DiagnosticVirtualTextError = { bg = "#350B0B", fg = "#D1503A" },
+    DiagnosticVirtualTextWarn = { bg = "#3F240A", fg = "#C8935D" },
+    DiagnosticVirtualTextHint = { bg = "#1D2B37", fg = "#7E9CB9" },
+    DiagnosticVirtualTextInfo = { bg = "#162C0B", fg = "#7BAC62" },
 
     --- Treesitter
     TSAttribute = {},
