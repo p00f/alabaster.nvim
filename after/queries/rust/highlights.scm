@@ -9,6 +9,11 @@
   type: (type_identifier) @alabaster.definition)
 
 (impl_item
+  type: (scoped_type_identifier
+          path: (scoped_identifier)
+          name: (type_identifier) @alabaster.definition))
+
+(impl_item
   body: (declaration_list
           (type_item
             name: (type_identifier) @alabaster.definition)))
