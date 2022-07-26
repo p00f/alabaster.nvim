@@ -6,10 +6,8 @@
   name: (type_identifier) @alabaster.definition)
 
 (impl_item
-  type: (type_identifier) @alabaster.definition
-  !trait)
-(impl_item
-  trait: (type_identifier) @alabaster.definition)
+  type: (type_identifier) @alabaster.definition)
+
 (impl_item
   body: (declaration_list
           (type_item
