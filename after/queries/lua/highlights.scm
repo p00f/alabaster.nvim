@@ -1,24 +1,24 @@
 ;; vim: ft=query
 
 (function_declaration
-  name: (identifier) @alabaster.definition)
+  name: (identifier) @AlabasterDefinition)
 
 (assignment_statement
   (variable_list
     name: (dot_index_expression
-            field: (identifier) @alabaster.definition))
+            field: (identifier) @AlabasterDefinition))
   (expression_list
     value: (function_definition)))
 
 (assignment_statement
   (variable_list
-    name: (identifier) @alabaster.definition)
+    name: (identifier) @AlabasterDefinition)
   (expression_list
     value: (function_definition)))
 
 (function_declaration
   name: (dot_index_expression
-          field: (identifier) @alabaster.definition))
+          field: (identifier) @AlabasterDefinition))
 
 (table_constructor
-  (field name: (identifier) @alabaster.string))
+  (field name: (identifier) @AlabasterString))

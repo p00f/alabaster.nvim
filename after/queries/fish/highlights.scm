@@ -1,12 +1,12 @@
 ;; vim: ft=query
 
 (function_definition
-  name: (word) @alabaster.definition)
+  name: (word) @AlabasterDefinition)
 
 (command
   name: (word) @function.builtin
   (#match? @function.builtin "^set$")
   argument: (word) @parameter
   (#any-of? @parameter "-g" "--global" "-U" "--universal" "-x" "--export")
-  argument: (word) @alabaster.definition
+  argument: (word) @AlabasterDefinition
   argument: (_))

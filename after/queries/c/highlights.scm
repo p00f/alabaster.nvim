@@ -1,19 +1,19 @@
 ;; vim: ft=query
 
 (function_declarator
-  declarator: (identifier) @alabaster.definition)
+  declarator: (identifier) @AlabasterDefinition)
 (preproc_function_def
-  name: (identifier) @alabaster.definition)
+  name: (identifier) @AlabasterDefinition)
 
 (type_definition
   type: (struct_specifier
-          name: (type_identifier) @alabaster.definition)
-  declarator: (type_identifier) @alabaster.definition)
+          name: (type_identifier) @AlabasterDefinition)
+  declarator: (type_identifier) @AlabasterDefinition)
 
 (type_definition
   type: (struct_specifier)
-  declarator: (type_identifier) @alabaster.definition)
+  declarator: (type_identifier) @AlabasterDefinition)
 
 (type_definition
   type: (enum_specifier)
-  declarator: (type_identifier) @alabaster.definition)
+  declarator: (type_identifier) @AlabasterDefinition)

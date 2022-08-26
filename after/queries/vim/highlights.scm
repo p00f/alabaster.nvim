@@ -4,8 +4,8 @@
   (function_declaration
     name: (scoped_identifier
             (scope)
-            (identifier) @alabaster.definition)))
+            (identifier) @AlabasterDefinition)))
 
 (function_definition
   (function_declaration
-    name: (identifier) @alabaster.definition))
+    name: (identifier) @AlabasterDefinition))

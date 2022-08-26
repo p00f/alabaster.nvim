@@ -6,12 +6,6 @@ end
 
 vim.g.colors_name = "alabaster_dark"
 
--- hlmap
-local hl_map = vim.treesitter.highlighter.hl_map
-hl_map["alabaster.definition"] = "AlabasterDefinition"
-hl_map["alabaster.punctuation"] = "AlabasterPunct"
-hl_map["alabaster.string"] = "AlabasterString"
-hl_map["alabaster.constant"] = "AlabasterConstant"
 
 -- terminal colors
 vim.g.terminal_color_0 = "#000000"
@@ -333,6 +327,30 @@ local theme = {
     --- asm
     asmDirective = { fg = dim_comment },
 }
+
+
+-- hlmap
+local hl_map = {
+    "AlabasterDefinition",
+    "AlabasterPunct",
+    "AlabasterString",
+    "AlabasterConstant",
+}
+
+local link_captures = nil
+if vim.treesitter.highlighter.hl_map then
+    link_captures = function(_, highlight_group)
+        vim.treesitter.highlighter.hl_map[highlight_group] = highlight_group
+    end
+else
+    link_captures = function(_, highlight_group)
+        vim.api.nvim_set_hl(0, "@" .. highlight_group, { link = highlight_group })
+    end
+end
+
+for key, value in pairs(hl_map) do
+    link_captures(key, value)
+end
 
 for k, v in pairs(theme) do
     vim.api.nvim_set_hl(0, k, v)

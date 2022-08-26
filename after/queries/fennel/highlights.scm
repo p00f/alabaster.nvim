@@ -1,17 +1,17 @@
 ;; vim: ft=query
 
 (fn
-  name: (symbol) @alabaster.definition)
+  name: (symbol) @AlabasterDefinition)
   ; TODO: add this when https://github.com/nvim-treesitter/nvim-treesitter/issues/1788 is fixed
-  ; docstring: (string)? @alabaster.comment
+  ; docstring: (string)? @AlabasterComment
 (fn
-  name: (multi_symbol (symbol) @alabaster.definition))
+  name: (multi_symbol (symbol) @AlabasterDefinition))
 
 (global
   (binding
-    (symbol) @alabaster.definition))
+    (symbol) @AlabasterDefinition))
 
 (list
   (symbol) @function.macro
   (#match? @function.macro "^macro$")
-  (symbol) @alabaster.definition)
+  (symbol) @AlabasterDefinition)

@@ -1,6 +1,6 @@
 ;; vim: ft=query
 
 (function_declaration
-  name: (identifier) @alabaster.definition)
+  name: (identifier) @AlabasterDefinition)
 
-(undefined) @alabaster.constant
+(undefined) @AlabasterConstant

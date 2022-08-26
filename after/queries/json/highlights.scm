@@ -2,4 +2,4 @@
 
 (object
   (pair
-    key: (string) @alabaster.string))
+    key: (string) @AlabasterString))

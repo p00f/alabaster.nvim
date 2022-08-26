@@ -1,8 +1,8 @@
 ;; vim: ft=query
 (function_declaration
-  (simple_identifier) @alabaster.definition)
+  (simple_identifier) @AlabasterDefinition)
 
 (class_declaration
-  (type_identifier) @alabaster.definition)
+  (type_identifier) @AlabasterDefinition)
 
-(modifiers (annotation (user_type (type_identifier) @alabaster.punctuation)))
+(modifiers (annotation (user_type (type_identifier) @AlabasterPunctuation)))

@@ -2,4 +2,4 @@
 
 (defun
   (defun_header
-    function_name: (sym_lit) @alabaster.definition))
+    function_name: (sym_lit) @AlabasterDefinition))

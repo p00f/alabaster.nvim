@@ -1,12 +1,12 @@
 ;; vim: ft=query
 
 (interface_declaration
-  name: (type_identifier) @alabaster.definition)
+  name: (type_identifier) @AlabasterDefinition)
 
 (function_declaration
-  name: (identifier) @alabaster.definition)
+  name: (identifier) @AlabasterDefinition)
 
 (type_alias_declaration
-  name: (type_identifier) @alabaster.definition)
+  name: (type_identifier) @AlabasterDefinition)
 
-(undefined) @alabaster.constant
+(undefined) @AlabasterConstant

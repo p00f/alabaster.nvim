@@ -2,8 +2,8 @@
 
 (TopLevelDecl
   (VarDecl
-    variable_type_function: (IDENTIFIER) @alabaster.definition
+    variable_type_function: (IDENTIFIER) @AlabasterDefinition
     (ErrorUnionExpr)))
 
 (FnProto
-  function: (IDENTIFIER) @alabaster.definition)
+  function: (IDENTIFIER) @AlabasterDefinition)
