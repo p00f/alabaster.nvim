@@ -1,4 +1,5 @@
 ;; vim: ft=query
+;; extends
 
 (fn
   name: (symbol) @AlabasterDefinition)

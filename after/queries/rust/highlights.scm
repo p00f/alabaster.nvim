@@ -1,4 +1,5 @@
 ;; vim: ft=query
+;; extends
 
 (struct_item
   name: (type_identifier) @AlabasterDefinition)

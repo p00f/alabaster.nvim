@@ -254,6 +254,8 @@ local theme = {
     TelescopeSelectionCaret = { fg = mistake.fg },
     TelescopeTitle = { fg = ansi.brightyellow },
     TelescopeResultsTitle = { fg = ansi.yellow },
+    --- fzf-lua
+    FzfLuaBorder = { fg = "#2b3d40" },
     --- Neogit
     NeogitPopupActionDisabled = { fg = darker_fg },
     NeogitPopupActionKey = { fg = ansi.magenta },

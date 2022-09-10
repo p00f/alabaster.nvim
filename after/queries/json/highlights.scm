@@ -1,4 +1,5 @@
 ;; vim: ft=query
+;; extends
 
 (object
   (pair

@@ -1,3 +1,4 @@
+;; extends
 (list_lit
   value: (sym_lit)
   (#any-of? @_keyword.function "fn" "fn*" "defn" "defn-")

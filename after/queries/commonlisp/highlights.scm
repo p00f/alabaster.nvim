@@ -1,4 +1,5 @@
 ;; vim: ft=query
+;; extends
 
 (defun
   (defun_header

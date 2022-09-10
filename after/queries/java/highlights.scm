@@ -1,4 +1,5 @@
 ;; vim: ft=query
+;; extends
 
 (class_declaration
   name: (identifier) @AlabasterDefinition)
