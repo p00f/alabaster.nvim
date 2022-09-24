@@ -6,7 +6,6 @@ end
 
 vim.g.colors_name = "alabaster_dark"
 
-
 -- terminal colors
 vim.g.terminal_color_0 = "#000000"
 vim.g.terminal_color_1 = "#d2322d"
@@ -113,7 +112,7 @@ local theme = {
     QuickFixLine = { bg = "#182325" },
     Search = { bg = "#354c50" },
     SpecialKey = { fg = ansi.cyan },
-    SpellBad = { bg = mistake.bg, fg = mistake.fg },
+    SpellBad = { undercurl = 1, sp = ansi.red },
     SpellCap = { undercurl = 1, sp = ansi.blue },
     SpellLocal = { undercurl = 1, sp = ansi.cyan },
     SpellRare = { undercurl = 1, sp = ansi.magenta },
@@ -329,7 +328,6 @@ local theme = {
     --- asm
     asmDirective = { fg = dim_comment },
 }
-
 
 -- hlmap
 local hl_map = {
