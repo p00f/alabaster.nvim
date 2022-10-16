@@ -59,7 +59,8 @@ Clojure (same code and font as the one on the original ST theme's README for com
 ![image](https://user-images.githubusercontent.com/36493671/159711835-cf18d1c4-6940-414a-830b-a7096268b014.png)
 
 Help
-![swappy-20220130-112338](https://user-images.githubusercontent.com/36493671/151689040-8eeeabdd-2aaa-418c-a3ab-8a7e09596abc.png)
+![help-dark](https://user-images.githubusercontent.com/36493671/151689040-8eeeabdd-2aaa-418c-a3ab-8a7e09596abc.png)
+![help-light](https://user-images.githubusercontent.com/36493671/196017663-966f361e-1548-4ab0-b8b7-6801d7dc3e30.png)
 
 
 
