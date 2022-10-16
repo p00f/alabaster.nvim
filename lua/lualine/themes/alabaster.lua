@@ -1,11 +1,23 @@
-local colors = {
-    color1 = "#162022",
-    color2 = "#cd974b",
-    color3 = "#cecece",
-    color4 = "#9F9F9F",
-    color5 = "#333333",
-    color6 = "#cc8bc9",
-}
+local colors
+if vim.o.background == "dark" then
+    colors = {
+        color1 = "#162022",
+        color2 = "#cd974b",
+        color3 = "#cecece",
+        color4 = "#9F9F9F",
+        color5 = "#333333",
+        color6 = "#cc8bc9",
+    }
+else
+    colors = {
+        color1 = "#c9c9c9",
+        color2 = "#cb9000",
+        color3 = "#222222",
+        color4 = "#666666",
+        color5 = "#aaaaaa",
+        color6 = "#7a3e9d",
+    }
+end
 
 return {
     replace = {
