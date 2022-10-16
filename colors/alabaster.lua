@@ -621,11 +621,11 @@ else
         AlabasterYellow = { fg = ansi.yellow },
         --- Hop
         HopNextKey = { fg = ansi.yellow },
-        HopNextKey1 = { fg = ansi.cyan },
-        HopNextKey2 = { fg = "#00aacb" },
-        HopUnmatched = { fg = "#bbbbbb" },
+        HopNextKey1 = { fg = ansi.blue },
+        HopNextKey2 = { fg = "#17A2D6" },
+        HopUnmatched = { fg = "#bfbfbf" },
         --- Lightspeed
-        LightspeedGreyWash = { fg = "#bbbbbb" },
+        LightspeedGreyWash = { fg = "#bfbfbf" },
         --- checkhealth
         healthSuccess = { fg = ansi.green, bg = bg },
         --- cmp
@@ -640,7 +640,7 @@ else
         rainbowcol7 = { fg = ansi.cyan },
         --- Iswap
         ISwapSnipe = { bg = ansi.yellow, fg = bg },
-        ISwapGrey = { fg = "#bbbbbb" },
+        ISwapGrey = { fg = "#bfbfbf" },
         --- vim-dadbod-ui
         dbui_help = { fg = dim_comment },
         dbui_connection_source = { fg = dim_comment },
