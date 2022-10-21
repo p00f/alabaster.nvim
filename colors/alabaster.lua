@@ -109,7 +109,7 @@ if vim.o.background == "dark" then
         PmenuSbar = { bg = "#212f31" },
         PmenuThumb = { bg = "#47666b" },
         Question = { fg = diffadd },
-        QuickFixLine = { bg = "#E2EEEE" },
+        QuickFixLine = { bg = "#182325" },
         Search = { bg = "#354c50" },
         SpecialKey = { fg = ansi.cyan },
         SpellBad = { undercurl = 1, sp = ansi.red },
