@@ -270,6 +270,8 @@ if vim.o.background == "dark" then
         ["@tag"] = { fg = ansi.white },
         ["@tag.delimiter"] = { fg = punct_fg },
         ["@text"] = { fg = ansi.white },
+        ["@text.note"] = { bg = "#1d292b", fg = ansi.blue },
+        ["@text.warning"] = { bg = "#d0d058", fg = bg },
 
         --- Theme specific
         AlabasterConstant = { fg = const_fg },
@@ -628,6 +630,8 @@ else
         ["@tag"] = { fg = ansi.black },
         ["@tag.delimiter"] = { fg = punct_fg },
         ["@text"] = { fg = ansi.black },
+        ["@text.note"] = { bg = "#1d292b", fg = ansi.blue },
+        ["@text.warning"] = { bg = "#FFDEAA", fg = ansi.blue },
 
         --- Theme specific
         AlabasterConstant = { fg = const_fg },
