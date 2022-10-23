@@ -17,6 +17,7 @@ Two config options are provided:
     When false, floating window borders have no foreground colour and background colour is the same as popup menus.
 
 ## Themed plugins
+- [folke/noice.nvim](https://github.com/folke/noice.nvim)
 - [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [TimUntersberger/neogit](https://github.com/TimUntersberger/neogit)

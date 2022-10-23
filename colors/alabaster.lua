@@ -330,6 +330,7 @@ if vim.o.background == "dark" then
         AlabasterBrightYellow = { fg = ansi.brightyellow },
         AlabasterCyan = { fg = ansi.cyan },
         AlabasterGreen = { fg = ansi.green },
+        AlabasterDarkGreen = { fg = "#6abf40" },
         AlabasterMagenta = { fg = ansi.magenta },
         AlabasterRed = { fg = ansi.red },
         AlabasterWhite = { fg = ansi.white },
@@ -361,6 +362,18 @@ if vim.o.background == "dark" then
         dbui_connection_source = { fg = dim_comment },
         --- nvim-dap-virtual-text
         NvimDapVirtualText = { bg = "#1d292b", fg = ansi.cyan },
+        --- Noice
+        NoiceCmdlineIcon = { link = "AlabasterDarkGreen" },
+        NoiceCmdlinePopupBorder = { link = "AlabasterDarkGreen" },
+        NoiceConfirmBorder = { link = "AlabasterDarkGreen" },
+        NoiceCmdlinePopupBorderCmdline = { link = "AlabasterDarkGreen" },
+        NoiceCmdlineIconCmdline = { link = "AlabasterDarkGreen" },
+        NoiceCmdlinePopupBorderFilter = { link = "AlabasterDarkGreen" },
+        NoiceCmdlineIconFilter = { link = "AlabasterDarkGreen" },
+        NoiceCmdlinePopupBorderLua = { link = "AlabasterDarkGreen" },
+        NoiceCmdlineIconLua = { link = "AlabasterDarkGreen" },
+        NoiceCmdlinePopupBorderSearch = { link = "AlabasterYellow" },
+        NoiceCmdlineIconSearch = { link = "AlabasterYellow" },
         -- Languages
         --- asm
         asmDirective = { fg = dim_comment },
@@ -690,6 +703,7 @@ else
         AlabasterBrightYellow = { fg = ansi.brightyellow },
         AlabasterCyan = { fg = ansi.cyan },
         AlabasterGreen = { fg = ansi.green },
+        AlabasterBrightGreen = { fg = "#60cb00" },
         AlabasterMagenta = { fg = ansi.magenta },
         AlabasterRed = { fg = ansi.red },
         AlabasterWhite = { fg = ansi.black },
@@ -721,6 +735,18 @@ else
         dbui_connection_source = { fg = dim_comment },
         --- nvim-dap-virtual-text
         NvimDapVirtualText = { bg = "#78D2C9", fg = fg },
+        --- Noice
+        NoiceCmdlineIcon = { link = "AlabasterBrightGreen" },
+        NoiceCmdlinePopupBorder = { link = "AlabasterBrightGreen" },
+        NoiceConfirmBorder = { link = "AlabasterBrightGreen" },
+        NoiceCmdlinePopupBorderCmdline = { link = "AlabasterBrightGreen" },
+        NoiceCmdlineIconCmdline = { link = "AlabasterBrightGreen" },
+        NoiceCmdlinePopupBorderFilter = { link = "AlabasterBrightGreen" },
+        NoiceCmdlineIconFilter = { link = "AlabasterBrightGreen" },
+        NoiceCmdlinePopupBorderLua = { link = "AlabasterBrightGreen" },
+        NoiceCmdlineIconLua = { link = "AlabasterBrightGreen" },
+        NoiceCmdlinePopupBorderSearch = { link = "AlabasterYellow" },
+        NoiceCmdlineIconSearch = { link = "AlabasterYellow" },
         -- Languages
         --- asm
         asmDirective = { fg = dim_comment },
