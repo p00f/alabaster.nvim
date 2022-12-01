@@ -1,7 +1,7 @@
 Alabaster Color Scheme
 ===
 
-A light color scheme with minimal amount of highlighting for ~Sublime Text 3~ neovim.
+A light color scheme with minimal amount of highlighting for <del>Sublime Text 3</del> neovim.
 
 ## Motivation
 (from the original [sublime text theme](https://github.com/tonsky/sublime-scheme-alabaster))
