@@ -278,6 +278,7 @@ if vim.o.background == "dark" then
         AlabasterDefinition = { fg = def_fg },
         AlabasterPunct = { fg = punct_fg },
         AlabasterString = { fg = string_fg },
+        ["@AlabasterHashbang"] = { fg = dim_comment },
         --- Gitsigns
         GitSignsAdd = { fg = diffadd },
         GitSignsChange = { fg = diffchange },
@@ -377,6 +378,7 @@ if vim.o.background == "dark" then
         -- Languages
         --- asm
         asmDirective = { fg = dim_comment },
+        nasmLabel = { link = "AlabasterDefinition" },
     }
 else
     -- terminal colors
@@ -651,6 +653,7 @@ else
         AlabasterDefinition = { fg = def_fg },
         AlabasterPunct = { fg = punct_fg },
         AlabasterString = { fg = string_fg },
+        ["@AlabasterHashbang"] = { fg = dim_comment },
         --- Gitsigns
         GitSignsAdd = { fg = "#6abf40" },
         GitSignsChange = { fg = diffchange },
@@ -750,6 +753,7 @@ else
         -- Languages
         --- asm
         asmDirective = { fg = dim_comment },
+        nasmLabel = { link = "AlabasterDefinition" },
     }
 end
 

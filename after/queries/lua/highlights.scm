@@ -23,3 +23,5 @@
 
 (table_constructor
   (field name: (identifier) @AlabasterString))
+
+(hash_bang_line) @AlabasterHashbang

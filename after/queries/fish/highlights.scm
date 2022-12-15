@@ -11,3 +11,6 @@
   (#any-of? @parameter "-g" "--global" "-U" "--universal" "-x" "--export")
   argument: (word) @AlabasterDefinition
   argument: (_))
+
+((program . (comment) @AlabasterHashbang)
+ (#match? @AlabasterHashbang "^#!/"))

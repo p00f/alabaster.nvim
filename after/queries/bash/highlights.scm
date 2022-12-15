@@ -3,3 +3,6 @@
 
 (function_definition
   name: (word) @AlabasterDefinition)
+
+((program . (comment) @AlabasterHashbang)
+ (#match? @AlabasterHashbang "^#!/"))
