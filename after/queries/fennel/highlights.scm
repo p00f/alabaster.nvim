@@ -16,3 +16,8 @@
   (symbol) @function.macro
   (#match? @function.macro "^macro$")
   (symbol) @AlabasterDefinition)
+
+
+((program . (hashfn) @AlabasterHashbang)
+ (#match? @AlabasterHashbang "^#!/")
+ (#set! "priority" 101))
