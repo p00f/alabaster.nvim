@@ -1,7 +1,7 @@
 ;; vim: ft=query
 ;; extends
 
-(TopLevelDecl
+(Decl
   (VarDecl
     variable_type_function: (IDENTIFIER) @AlabasterDefinition
     (ErrorUnionExpr)))
