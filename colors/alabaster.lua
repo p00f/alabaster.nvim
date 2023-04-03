@@ -484,7 +484,7 @@ else
         PmenuThumb = { bg = "#333333" },
         Question = { fg = ansi.green },
         QuickFixLine = { bg = "#E2EEEE" },
-        Search = { bg = "#999999" },
+        Search = { bg = "#aaaaaa" },
         SpecialKey = { fg = ansi.cyan },
         SpellBad = { undercurl = 1, sp = ansi.red },
         SpellCap = { undercurl = 1, sp = ansi.blue },
@@ -645,7 +645,7 @@ else
         ["@tag"] = { fg = ansi.black },
         ["@tag.delimiter"] = { fg = punct_fg },
         ["@text"] = { fg = ansi.black },
-        ["@text.note"] = { bg = "#1d292b", fg = ansi.blue },
+        ["@text.note"] = { bg = "#dddddd", fg = ansi.blue },
         ["@text.warning"] = { bg = "#FFDEAA", fg = ansi.blue },
 
         --- Theme specific
