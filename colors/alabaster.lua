@@ -484,7 +484,7 @@ else
         PmenuThumb = { bg = "#333333" },
         Question = { fg = ansi.green },
         QuickFixLine = { bg = "#E2EEEE" },
-        Search = { bg = "#aaaaaa" },
+        Search = { bg = "#fae9b7", fg = fg },
         SpecialKey = { fg = ansi.cyan },
         SpellBad = { undercurl = 1, sp = ansi.red },
         SpellCap = { undercurl = 1, sp = ansi.blue },
