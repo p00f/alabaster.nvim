@@ -274,10 +274,10 @@ if vim.o.background == "dark" then
         ["@text.warning"] = { bg = "#d0d058", fg = bg },
 
         --- Theme specific
-        AlabasterConstant = { fg = const_fg },
-        AlabasterDefinition = { fg = def_fg },
-        AlabasterPunct = { fg = punct_fg },
-        AlabasterString = { fg = string_fg },
+        ["@AlabasterConstant"] = { fg = const_fg },
+        ["@AlabasterDefinition"] = { fg = def_fg },
+        ["@AlabasterPunct"] = { fg = punct_fg },
+        ["@AlabasterString"] = { fg = string_fg },
         ["@AlabasterHashbang"] = { fg = dim_comment },
         --- Gitsigns
         GitSignsAdd = { fg = diffadd },
@@ -378,7 +378,7 @@ if vim.o.background == "dark" then
         -- Languages
         --- asm
         asmDirective = { fg = dim_comment },
-        nasmLabel = { link = "AlabasterDefinition" },
+        nasmLabel = { link = "@AlabasterDefinition" },
     }
 else
     -- terminal colors
@@ -649,10 +649,10 @@ else
         ["@text.warning"] = { bg = "#FFDEAA", fg = ansi.blue },
 
         --- Theme specific
-        AlabasterConstant = { fg = const_fg },
-        AlabasterDefinition = { fg = def_fg },
-        AlabasterPunct = { fg = punct_fg },
-        AlabasterString = { fg = string_fg },
+        ["@AlabasterConstant"] = { fg = const_fg },
+        ["@AlabasterDefinition"] = { fg = def_fg },
+        ["@AlabasterPunct"] = { fg = punct_fg },
+        ["@AlabasterString"] = { fg = string_fg },
         ["@AlabasterHashbang"] = { fg = dim_comment },
         --- Gitsigns
         GitSignsAdd = { fg = "#6abf40" },
@@ -753,35 +753,12 @@ else
         -- Languages
         --- asm
         asmDirective = { fg = dim_comment },
-        nasmLabel = { link = "AlabasterDefinition" },
+        nasmLabel = { link = "@AlabasterDefinition" },
     }
 end
 
--- hlmap
-local hl_map = {
-    "AlabasterDefinition",
-    "AlabasterPunct",
-    "AlabasterString",
-    "AlabasterConstant",
-}
-
-local link_captures = nil
-if vim.treesitter.highlighter.hl_map then
-    link_captures = function(_, highlight_group)
-        vim.treesitter.highlighter.hl_map[highlight_group] = highlight_group
-    end
-else
-    link_captures = function(_, highlight_group)
-        vim.api.nvim_set_hl(0, "@" .. highlight_group, { link = highlight_group })
-    end
-end
-
-for key, value in pairs(hl_map) do
-    link_captures(key, value)
-end
-
-for k, v in pairs(theme) do
-    vim.api.nvim_set_hl(0, k, v)
+for group, hl in pairs(theme) do
+    vim.api.nvim_set_hl(0, group, hl)
 end
 
 -- vi:nowrap
