@@ -70,7 +70,7 @@ if vim.o.background == "dark" then
         }
     theme = {
         Comment = { fg = comment_fg },
-        ColorColumn = { bg = "#E2EEEE" },
+        ColorColumn = { bg = "#182325" },
         Conceal = { fg = "#b0b0b0" },
         Cursor = { bg = active, fg = "#000000" },
         -- lCursor      { }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
