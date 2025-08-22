@@ -248,6 +248,7 @@ if vim.o.background == "dark" then
         ["@function.macro"] = { fg = ansi.white },
         ["@keyword"] = { fg = ansi.white },
         ["@keyword.function"] = { fg = ansi.white },
+        ["@keyword.operator"] = { fg = punct_fg },
         ["@label"] = { fg = ansi.white },
         ["@method"] = { fg = ansi.white },
         ["@module"] = { fg = ansi.white },
