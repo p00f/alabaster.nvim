@@ -8,3 +8,6 @@
 
 ((module . (comment) @AlabasterHashbang)
  (#match? @AlabasterHashbang "^#!/"))
+
+(decorator
+  (identifier) @AlabasterBase)

@@ -276,6 +276,7 @@ if vim.o.background == "dark" then
         ["@text.warning"] = { bg = "#d0d058", fg = bg },
 
         --- Theme specific
+        ["@AlabasterBase"] = { fg = ansi.white },
         ["@AlabasterConstant"] = { fg = const_fg },
         ["@AlabasterDefinition"] = { fg = def_fg },
         ["@AlabasterPunct"] = { fg = punct_fg },
