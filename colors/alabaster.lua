@@ -296,6 +296,8 @@ if vim.o.background == "dark" then
         TelescopeResultsTitle = { fg = ansi.yellow },
         --- fzf-lua
         FzfLuaBorder = { fg = "#2b3d40" },
+        --- mini.nvim
+        MiniPickMatchCurrent  = { fg = "#f09942" },
         --- Neogit
         NeogitPopupActionDisabled = { fg = darker_fg },
         NeogitPopupActionKey = { fg = ansi.magenta },
