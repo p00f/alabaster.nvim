@@ -6,4 +6,7 @@
 (class_declaration
   (type_identifier) @AlabasterDefinition)
 
+(object_declaration
+  (type_identifier) @AlabasterDefinition)
+
 (modifiers (annotation (user_type (type_identifier) @AlabasterPunctuation)))
