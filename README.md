@@ -32,7 +32,7 @@ This is designed with [nvim-treesitter](https://github.com/nvim-treesitter/nvim-
 
 ## Usage
 ```vim
-set termguiclors
+set termguicolors
 colorscheme alabaster
 ```
 The TUI will likely detect your terminal background and set `background` accordingly. If you want to force light or dark mode, use `set background=dark` or `set background=light`
