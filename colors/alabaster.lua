@@ -384,6 +384,23 @@ if vim.o.background == "dark" then
         --- asm
         asmDirective = { fg = dim_comment },
         nasmLabel = { link = "@AlabasterDefinition" },
+
+        ["@lsp.mod.declaration"] = { fg = fg },
+        ["@lsp.type.enumMember"] = { fg = fg },
+        ["@lsp.type.function"] = { fg = fg },
+        ["@lsp.type.method"] = { fg = fg },
+        ["@lsp.type.selfKeyword"] = { fg = fg },
+        ["@lsp.typemod.class.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.class.definition"] = { fg = def_fg },
+        ["@lsp.typemod.enum.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.enumMember.defaultLibrary"] = { fg = fg },
+        ["@lsp.typemod.function.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.function.definition"] = { fg = def_fg },
+        ["@lsp.typemod.macro.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.method.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.selfKeyword"] = { fg = fg },
+        ["@lsp.typemod.struct.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.type.declaration"] = { fg = def_fg },
     }
 else
     -- terminal colors
@@ -760,6 +777,22 @@ else
         --- asm
         asmDirective = { fg = dim_comment },
         nasmLabel = { link = "@AlabasterDefinition" },
+        ["@lsp.mod.declaration"] = { fg = fg },
+        ["@lsp.type.enumMember"] = { fg = fg },
+        ["@lsp.type.function"] = { fg = fg },
+        ["@lsp.type.method"] = { fg = fg },
+        ["@lsp.type.selfKeyword"] = { fg = fg },
+        ["@lsp.typemod.class.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.class.definition"] = { fg = def_fg },
+        ["@lsp.typemod.enum.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.enumMember.defaultLibrary"] = { fg = fg },
+        ["@lsp.typemod.function.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.function.definition"] = { fg = def_fg },
+        ["@lsp.typemod.macro.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.method.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.selfKeyword"] = { fg = fg },
+        ["@lsp.typemod.struct.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.type.declaration"] = { fg = def_fg },
     }
 end
 
