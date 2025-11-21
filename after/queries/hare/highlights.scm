@@ -2,8 +2,7 @@
 ;; extends
 
 (function_declaration
-  name: (identifier
-          (name) @AlabasterDefinition))
+  name: (identifier) @AlabasterDefinition)
 
 (type_declaration
-  (type_bindings (identifier (name) @AlabasterDefinition)))
+  (identifier) @AlabasterDefinition)
